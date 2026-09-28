@@ -16,7 +16,7 @@ export function Section({ id, eyebrow, title, description, action, children, cla
   const titleId = `${id}-title`;
 
   return (
-    <section id={id} aria-labelledby={titleId} className={cn("scroll-mt-24 py-20 sm:py-28", className)}>
+    <section id={id} aria-labelledby={titleId} className={cn("scroll-mt-20 py-14 sm:py-20", className)}>
       <Container>
         <Reveal className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
@@ -30,7 +30,7 @@ export function Section({ id, eyebrow, title, description, action, children, cla
           </div>
           {action}
         </Reveal>
-        <div className="mt-12 sm:mt-14">{children}</div>
+        <div className="mt-10 sm:mt-12">{children}</div>
       </Container>
     </section>
   );

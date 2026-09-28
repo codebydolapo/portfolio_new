@@ -7,10 +7,10 @@ export const site = {
   bio: "I turn dense APIs, data pipelines and business logic into interfaces people actually enjoy using — working across React, Next.js, TypeScript and Node, and sweating the details most people never notice until they're missing.",
   availability: "Available for full-time roles & projects",
   avatar: "/pfp.png" as string | undefined,
-  email: "hello@yourdomain.com",
+  email: "bashorun115@gmail.com",
   socials: {
     github: "https://github.com/yourhandle",
-    linkedin: "https://www.linkedin.com/iffocusn/yourhandle",
+    linkedin: "https://www.linkedin.com/in/yourhandle",
     medium: "https://medium.com/@yourhandle",
   },
 } as const;

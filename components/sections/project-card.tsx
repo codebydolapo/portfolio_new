@@ -43,7 +43,9 @@ export function ProjectCard({ project, size }: ProjectCardProps) {
         {project.description}
       </p>
 
-      {size === "hero" && <ProjectVisual accent={project.accent} />}
+      {size === "hero" && <ProjectVisual accent={project.accent} className="mt-8 min-h-56" />}
+      {/* Wide tiles share a row with taller cards on desktop — fill the space instead of leaving it blank */}
+      {size === "wide" && <ProjectVisual accent={project.accent} className="mt-6 hidden min-h-32 lg:block" />}
 
       <dl className={cn("mt-6 grid gap-4 text-sm leading-relaxed", size !== "default" && "sm:grid-cols-2")}>
         <div>

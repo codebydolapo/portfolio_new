@@ -20,8 +20,8 @@ export function Blogs() {
     <Section
       id="writing"
       eyebrow="Writing"
-      title="Notes on craft, performance and motion."
-      description="Long-form articles on the ideas behind the interfaces — published on Medium and around the web."
+      title="My craft, peformance and thoughts written down."
+      description="Long-form articles on my ideas, from Medium and around the web."
       action={
         <a
           href={site.socials.medium}
@@ -35,9 +35,10 @@ export function Blogs() {
         </a>
       }
     >
-      <ul className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      {/* Swipeable row on phones (saves ~1,300px of scrolling), grid from tablet up */}
+      <ul className="no-scrollbar -mx-5 flex snap-x snap-mandatory scroll-px-5 gap-4 overflow-x-auto px-5 pt-1 pb-6 sm:-mx-8 sm:scroll-px-8 sm:px-8 md:mx-0 md:grid md:grid-cols-2 md:gap-5 md:overflow-visible md:p-0 lg:grid-cols-3">
         {posts.map((post, i) => (
-          <li key={post.id}>
+          <li key={post.id} className="w-[82%] shrink-0 snap-start sm:w-[60%] md:w-auto">
             <Reveal delay={Math.min(i * 0.05, 0.2)} className="h-full">
               <a
                 href={post.externalUrl}

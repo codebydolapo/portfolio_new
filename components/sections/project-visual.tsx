@@ -1,14 +1,19 @@
+import { cn } from "@/lib/cn";
+
 /**
- * Decorative "app window" used to fill the hero bento tile. Swap for a real
+ * Decorative "app window" used to fill featured bento tiles. Swap for a real
  * screenshot (next/image) when you have one.
  */
 const bars = [38, 52, 44, 68, 57, 76, 64, 88, 72, 94, 81, 100];
 
-export function ProjectVisual({ accent }: { accent: string }) {
+export function ProjectVisual({ accent, className }: { accent: string; className?: string }) {
   return (
     <div
       aria-hidden
-      className="squircle relative mt-8 min-h-56 flex-1 overflow-hidden rounded-2xl border border-black/5 dark:border-white/10"
+      className={cn(
+        "squircle relative flex-1 overflow-hidden rounded-2xl border border-black/5 dark:border-white/10",
+        className,
+      )}
       style={{ background: `linear-gradient(160deg, ${accent}24, ${accent}05 60%)` }}
     >
       <div className="flex items-center gap-1.5 border-b border-black/5 px-4 py-3 dark:border-white/10">

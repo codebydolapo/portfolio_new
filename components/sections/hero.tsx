@@ -16,7 +16,8 @@ const socials = [
 
 export function Hero() {
   return (
-    <section id="top" aria-labelledby="hero-title" className="relative isolate overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-24">
+    <section id="top" aria-labelledby="hero-title" className="relative isolate overflow-hidden pt-28 pb-12 sm:pt-36 sm:pb-16 lg:flex lg:min-h-[min(100svh,960px)] lg:items-center lg:pt-24 lg:pb-12"
+    >
       {/* Soft ambient glow behind the portrait */}
       <div
         aria-hidden
@@ -35,16 +36,16 @@ export function Hero() {
           </Reveal> */}
 
           <Reveal delay={0.06}>
-            <p className="mt-8 text-lg font-medium text-ink-muted sm:text-xl">Hi, I&apos;m</p>
+            <p className="text-lg font-medium text-ink-muted sm:text-xl">Hi, I&apos;m</p>
             <h1 id="hero-title" className="mt-1 text-5xl leading-[1.05] font-semibold tracking-tight sm:text-6xl lg:text-7xl">
               {site.name}
-              <span className="text-accent">.</span>
+              {/* <span className="text-accent">.</span> */}
             </h1>
           </Reveal>
 
           <Reveal delay={0.12}>
             <p className="mt-5 max-w-xl text-2xl leading-snug font-medium tracking-tight text-balance sm:text-[1.75rem]">
-              {site.role} — building{" "}
+            Product-Focused {site.role}. <br/> I build {" "}
               <span className="text-accent">simple, delightful interfaces</span> for complex backend systems.
             </p>
             {/* <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-pretty text-ink-muted">{site.bio}</p> */}

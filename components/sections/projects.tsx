@@ -11,11 +11,11 @@ export function Projects() {
     <Section
       id="work"
       eyebrow="Selected work"
-      title="Products shipped with obsessive care."
-      description="A few things I've designed, engineered and obsessed over — each one measured by the problem it solved."
+      title="Here are some products I have shipped."
+      description="Here are a few things I've designed or engineered or obsessed over, some solving a problem, others for the fun of it."
     >
-      {/* grid-flow-dense lets smaller cards back-fill around the featured tiles */}
-      <ul className="grid gap-5 md:grid-cols-2 lg:grid-flow-dense lg:auto-rows-fr lg:grid-cols-3">
+      {/* grid-flow-dense lets smaller cards back-fill around the featured tiles; rows size to content */}
+      <ul className="grid gap-5 md:grid-cols-2 lg:grid-flow-dense lg:grid-cols-3">
         {projects.map((project, i) => {
           const isHero = project.id === heroProjectId;
           return (

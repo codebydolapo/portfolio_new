@@ -26,7 +26,7 @@ export function Contact() {
       id="contact"
       eyebrow="Contact"
       title="Let's build something great."
-      description="Hiring for a frontend role or have a product that needs polish? My inbox is always open."
+      description="Are you hiring for a frontend role or have a product that needs polish? My inbox is always open!"
     >
       <div className="grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:gap-12">
         <Reveal className="flex flex-col gap-8">

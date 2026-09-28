@@ -15,9 +15,9 @@ export function Stack() {
   return (
     <Section
       id="stack"
-      eyebrow="Technical arsenal"
+      eyebrow="Technical tools"
       title="The tools behind the polish."
-      description="No percentage bars — just the stack I use every day to ship production software."
+      description="Just the stack I use every day to ship production software."
     >
       <ul className="grid gap-5 sm:grid-cols-2">
         {stack.map((category, i) => {
